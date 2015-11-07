@@ -1,0 +1,23 @@
+{
+  "name": "{{ cookiecutter.project_slug }}",
+  "version": "{{ cookiecutter.version }}",
+  "description": "{{ cookiecutter.project_short_description }}",
+  "main": "index.css",
+  "style": "index.css",
+  "files": [
+    "index.css"
+  ],
+  "scripts": {
+    "prepublish": "mkdir -p dist && npm run buildcss && npm run buildcss-test",
+    "buildcss": "suitcss index.css dist/index.css",
+    "buildcss-test": "suitcss test/test.css dist/test.css",
+    "npm-prerequisites": "csssources test/test.css index.css > .npm-prerequisites"
+  },
+  "devDependencies": {
+    "csssources": "*",
+    "suitcss-components-test": "*",
+    "suitcss-preprocessor": "~0.4.0"
+  },
+  "author": "{{ cookiecutter.full_name }} <{{ cookiecutter.email }}>",
+  "license": "MIT"
+}

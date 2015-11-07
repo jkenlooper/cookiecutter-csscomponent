@@ -1,0 +1,9 @@
+@import "suitcss-components-test";
+
+@import "../index.css";
+
+/* Add custom styles to aid in visual tests. */
+body {
+  margin: 10px;
+  font-size: 62.5%;
+}

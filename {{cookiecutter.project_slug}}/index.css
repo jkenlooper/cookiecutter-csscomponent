@@ -1,0 +1,10 @@
+/** @define {{ cookiecutter.class_name }}; use strict */
+
+:root {
+  /*
+  --{{ cookiecutter.class_name }}-something-here: 13;
+  */
+}
+
+.{{ cookiecutter.class_name }} {
+}

@@ -1,0 +1,10 @@
+{
+	"full_name": "Jake Hickenlooper",
+	"email": "jake@weboftomorrow.com",
+	"github_username": "jkenlooper",
+	"project_name": "Component Name",
+	"project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '-') }}",
+	"class_name": "{{ cookiecutter.project_name.replace(' ', '') }}",
+	"project_short_description": "A CSS Component following the suitcss naming convention.",
+	"version": "0.0.0"
+}
